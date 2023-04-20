@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+       
+  </head>
+
+
+
+  <body>
+    <div class="dropdown">
+        <button class="dropbtn">Pick an Item</button>
+        <div class="dropdown-content">
+          <a href="birthdayhorse.html"onclick="changeImage('birthdayhorse.png')">Party Hat</a>
+          <a href="winninghorse.html"onclick="changeImage('images/winninghorse.png')">Blue Ribbon</a>
+          <a href="index.html"onclick="changeImage('images/horse.png')">Back to Normal</a>
+        </div>
+      </div>
+      <audio id="myAudio">
+		<source src="Elevator Music (Kevin MacLeod) - Gaming Background Music (HD).mp3" type="audio/mp3">
+		
+	</audio>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var audio = document.getElementById("myAudio");
+			audio.play();
+            setTimeout(function() {
+				audio.pause();
+			}, 15000);
+		};
+	</script>
+
+   <div class="center">
+    <audio id="my-audio">
+        <source src="HORSE - Sound Effect.mp3" type="audio/mp3">
+      </audio>
+    <h1 id="my-heading" class="center">Just a Regular Horse...</h1>
+    <p id="my-paragraph">Here we see a regular horse. Nothing too special about him. He's kinda pretty I guess. <br> What is that cool button over there? I wonder what happens when you click on an item. You should probably explore that first. <br> After though, I wonder what would happen if you clicked on him.</p>
+   <img id="my-image" src="images/horse.png" alt="brown horse">
+   <script src="main.js"></script>
+ </div>
+  </body>
+</html>

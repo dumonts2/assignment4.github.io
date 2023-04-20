@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+       
+  </head>
+
+
+
+  <body>
+    <div class="dropdown">
+        <button class="dropbtn">Pick an Item</button>
+        <div class="dropdown-content">
+          <a href="birthdayhorse.html"onclick="changeImage('birthdayhorse.png')">Party Hat</a>
+          <a href="winninghorse.html"onclick="changeImage('images/winninghorse.png')">Blue Ribbon</a>
+          <a href="index.html"onclick="changeImage('images/horse.png')">Back to Normal</a>
+        </div>
+      </div>
+
+      <audio id="myAudio">
+		<source src="Applause  Sound Effect.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
+	</audio>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var audio = document.getElementById("myAudio");
+			audio.play();
+		};
+	</script>
+
+    <h1 id="my-heading" class="center">A Winner.</h1>
+    <p id="my-paragraph">The regular horse isn't so regular anymore! He's a winner! Looks like he ran first in the Kentucky Derby! How did he get over there that fast?</p>
+   <img id="my-image" src="images/winninghorse.png" alt="brown horse with rose satchel and blue ribbon">
+   <script src="main.js"></script>
+ </div>
+  </body>
+</html>
